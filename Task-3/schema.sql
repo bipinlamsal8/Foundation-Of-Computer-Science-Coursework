@@ -15,3 +15,9 @@ CREATE TABLE Club (
     ClubMentor VARCHAR(100)
 );
 
+-- Create Membership table
+CREATE TABLE Membership (
+    MembershipID INT  PRIMARY KEY,
+    StudentID    INT  NOT NULL,
+    ClubID       INT  NOT NULL,
+    JoinDate     DATE NOT NULL,
