@@ -21,3 +21,6 @@ CREATE TABLE Membership (
     StudentID    INT  NOT NULL,
     ClubID       INT  NOT NULL,
     JoinDate     DATE NOT NULL,
+    FOREIGN KEY (StudentID) REFERENCES Student(StudentID)
+        ON DELETE CASCADE  
+        ON UPDATE CASCADE, 
