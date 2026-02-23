@@ -6,3 +6,12 @@ CREATE TABLE Student (
     StudentName VARCHAR(100) NOT NULL,
     Email       VARCHAR(100) NOT NULL UNIQUE
 ); 
+
+-- Create Club table
+CREATE TABLE Club (
+    ClubID     INT          PRIMARY KEY,
+    ClubName   VARCHAR(100) NOT NULL UNIQUE,
+    ClubRoom   VARCHAR(50),
+    ClubMentor VARCHAR(100)
+);
+
