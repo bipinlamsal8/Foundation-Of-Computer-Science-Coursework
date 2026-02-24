@@ -68,3 +68,6 @@ INSERT INTO Student VALUES (8, 'Riya', 'riya@email.com');
 
 -- 2. Insert a new club
 INSERT INTO Club VALUES (5, 'Art Club', 'R404', 'Ms. Priya');
+
+-- 3. Display all students
+SELECT * FROM Student;
