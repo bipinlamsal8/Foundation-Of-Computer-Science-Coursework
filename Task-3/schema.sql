@@ -74,3 +74,6 @@ SELECT * FROM Student;
 
 -- 4. Display all clubs
 SELECT * FROM Club;
+
+-- 5. Display all memberships
+SELECT * FROM Membership;
