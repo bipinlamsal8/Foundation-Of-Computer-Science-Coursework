@@ -71,3 +71,6 @@ INSERT INTO Club VALUES (5, 'Art Club', 'R404', 'Ms. Priya');
 
 -- 3. Display all students
 SELECT * FROM Student;
+
+-- 4. Display all clubs
+SELECT * FROM Club;
