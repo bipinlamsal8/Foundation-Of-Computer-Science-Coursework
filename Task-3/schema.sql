@@ -27,5 +27,9 @@ CREATE TABLE Membership (
     FOREIGN KEY (ClubID) REFERENCES Club(ClubID)
         ON DELETE CASCADE
         ON UPDATE CASCADE, 
-    UNIQUE (StudentID, ClubID)
+    UNIQUE (StudentID, ClubID) 
 );
+
+-- Create indexes for JOIN performance
+CREATE INDEX idx_membership_student ON Membership(StudentID);
+CREATE INDEX idx_membership_club    ON Membership(ClubID);
