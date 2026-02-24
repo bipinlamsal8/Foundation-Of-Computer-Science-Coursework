@@ -65,3 +65,6 @@ INSERT INTO Membership VALUES (10, 7, 4, '2024-01-30');
 
 -- 1. Insert a new student
 INSERT INTO Student VALUES (8, 'Riya', 'riya@email.com');
+
+-- 2. Insert a new club
+INSERT INTO Club VALUES (5, 'Art Club', 'R404', 'Ms. Priya');
