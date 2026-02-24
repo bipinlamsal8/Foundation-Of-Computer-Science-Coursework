@@ -60,3 +60,8 @@ INSERT INTO Membership VALUES (7,  2, 3, '2024-01-25');
 INSERT INTO Membership VALUES (8,  6, 2, '2024-01-27');
 INSERT INTO Membership VALUES (9,  3, 4, '2024-01-28');
 INSERT INTO Membership VALUES (10, 7, 4, '2024-01-30');
+
+-- Required Operations
+
+-- 1. Insert a new student
+INSERT INTO Student VALUES (8, 'Riya', 'riya@email.com');
