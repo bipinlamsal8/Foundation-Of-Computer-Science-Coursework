@@ -6,7 +6,7 @@ this module simulates a server that uses parameterized queries to defend against
   the vulnerable server where input is directly interpolated into the SQL query, allowing
    for successful attacks.
 """
-
+#by Bipin Lamsal
 # Simulated database
 users_db = [
     {"id": 1, "username": "admin",  "password": "secret123", "email": "admin@college.edu"},
@@ -14,7 +14,7 @@ users_db = [
     {"id": 3, "username": "bikash", "password": "pass789",   "email": "bikash@college.edu"},
 ]
 
-def vulnerable_login(username_input):
+def vulnerable_login(username_input): 
     """
     Vulnerable login function.
     Concatenates user input directly into SQL query string.
