@@ -37,3 +37,23 @@ if results:
     print("\n  CONCLUSION: Base64 encoding provided ZERO protection.")
 else:
     print("\n  RESULT: No data returned.")
+
+
+                                    # ATTACK 2: Same Payload - DEFENDED SERVER
+
+print("\n" + "=" * 60)
+print("ATTACK 2: SAME PAYLOAD — DEFENDED SERVER")
+print("=" * 60)
+
+print(f"\n  Original payload : {original_payload}")
+print(f"  Base64 encoded   : {encoded_payload}")
+print(f"  Server decodes to: {decoded_payload}")
+
+results = defended_login(decoded_payload)
+
+if results:
+    print(f"\n  RESULT: {len(results)} rows returned.")
+else:
+    print(f"\n  RESULT: 0 rows returned — ATTACK BLOCKED")
+    print("  The payload was treated as data, never as SQL code.")
+    print("\n  CONCLUSION: Parameterized queries provided complete protection.")
