@@ -57,3 +57,15 @@ else:
     print(f"\n  RESULT: 0 rows returned — ATTACK BLOCKED")
     print("  The payload was treated as data, never as SQL code.")
     print("\n  CONCLUSION: Parameterized queries provided complete protection.")
+
+                                                # SUMMARY TABLE
+
+print("\n" + "=" * 60)
+print("SUMMARY — Muttaqin et al. (2020): 83 SQL injection test cases")
+print("=" * 60)
+print(f"  {'Defence Applied':<30} {'Attack Success Rate'}")
+print(f"  {'-'*30} {'-'*20}")
+print(f"  {'No protection':<30} {'100% — all attacks succeed'}")
+print(f"  {'Encoding only (Base64)':<30} {'97% — nearly all succeed'}")
+print(f"  {'Parameterized queries':<30} {'0%  — complete protection'}")
+print("=" * 60)
