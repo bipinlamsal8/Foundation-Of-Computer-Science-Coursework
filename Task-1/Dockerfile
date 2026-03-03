@@ -13,6 +13,7 @@ COPY vulnerable_server.py .
 COPY defended_server.py .
 COPY attack_runner.py .
 COPY jwt_demo.py .
+COPY test_security.py .
 
 # Install requirements (no external packages needed)
 RUN pip3 install -r requirements.txt --break-system-packages || true
